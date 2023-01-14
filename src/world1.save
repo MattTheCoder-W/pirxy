@@ -1,5 +1,17 @@
 {
     "name": "Galaxy1",
     "created": "14/01/2023",
-    "objects": {}
+    "objects": {
+        "0": {
+            "type": "planet",
+            "name": "Earth",
+            "radius": 1.5,
+            "mass": 20,
+            "position": {
+                "x": 10,
+                "y": 20,
+                "z": 30
+            }
+        }
+    }
 }

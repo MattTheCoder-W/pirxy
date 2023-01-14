@@ -11,14 +11,14 @@ class Game:
         self.inventory = None
         self.vehicle = None
 
-        self.world.load_from_file("world1.save")
-        # self.world.create("Galaxy1")
+        # self.world.load_from_file("world1.save")
+        self.world.create("Galaxy1")
 
 
     def start(self):
         print(f"Game started on world: {self.world.get_attribute('name')}")
 
-        # self.world.put_object(Planet("Earth", 1.5, 20, Position(x = 10, y = 20, z = 30)))
+        self.world.put_object(Planet("Earth", 1.5, 20, Position(x = 10, y = 20, z = 30)))
 
         print(f"World details:")
         print(str(self.world))
