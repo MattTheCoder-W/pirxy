@@ -3,18 +3,18 @@ Space game
 
 ## Development progress
 
- - [ ] Create folder structure
+ - [x] Create folder structure
  - [ ] Create game classes
     - [ ] Game class
-        - [ ] Loading world
+        - [x] Loading world
         - [ ] Booting up game
         - [ ] Options management
             - [ ] Loading game options from file
             - [ ] Saving game options to file
     - [ ] World class
-        - [ ] Creating blank world
-        - [ ] Loading world from file
-        - [ ] Saving world to file
+        - [x] Creating blank world
+        - [x] Loading world from file
+        - [x] Saving world to file
         - [ ] World Generator
             - [ ] Basic object placement
             - [ ] Using seed to generate objects
