@@ -35,10 +35,10 @@ class World:
         raw_objects = []
         for obj_id in load_data['objects']:
             obj = load_data['objects'][obj_id]
-            if obj['type'].lower() not in OBJECT_TYPE:
-                print(f"Object of type `{obj['type']} is not recognized!`")
+            if obj['tag'].lower() not in OBJECT_TYPE:
+                print(f"Tag `{obj['tag']} is not recognized!`")
                 continue
-            raw_obj = OBJECT_TYPE[obj['type'].lower()]()
+            raw_obj = OBJECT_TYPE[obj['tag'].lower()]()
             raw_obj.from_json(obj)
             print(f"[world_load] Converted object from json")
             raw_objects.append(raw_obj)
@@ -58,7 +58,7 @@ class World:
         save_data['objects'] = {}
         for i, obj in enumerate(objects):
             print(f"[world_save] Converting object no. {i} to json")
-            print(obj)
+            print(type(obj))
             try:
                 save_data['objects'][str(i)] = obj.get_json()
             except:
